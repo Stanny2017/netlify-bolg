@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><feed xmlns="http://www.w3.org/2005/Atom">
   <title>司白官方博客</title>
   <id>http://www.chole.io/blog</id>
-  <updated>2018-06-29T20:40:31+08:00</updated>
+  <updated>2018-07-02T21:31:12+08:00</updated>
   <subtitle>爱郭哥，爱生活</subtitle>
   <link href="http://www.chole.io/blog"></link>
   <author>
@@ -13,6 +13,16 @@
     <id>tag:www.chole.io,2017-12-11:/blog/01.html</id>
     <content type="html">&lt;p&gt;纸小墨（InkPaper）是一个GO语言编写的开源静态博客构建工具，可以快速搭建博客网站。它无依赖跨平台，配置简单构建快速，注重简洁易用与更优雅的排版。&lt;/p&gt;&#xA;</content>
     <link href="http://www.chole.io/blog/01.html"></link>
+    <author>
+      <name>司白</name>
+    </author>
+  </entry>
+  <entry>
+    <title>7.2--无题</title>
+    <updated>2018-07-02T21:00:00+08:00</updated>
+    <id>tag:www.chole.io,2018-07-02:/blog/02.html</id>
+    <content type="html">&lt;p&gt;纸小墨（InkPaper）是一个GO语言编写的开源静态博客构建工具，可以快速搭建博客网站。它无依赖跨平台，配置简单构建快速，注重简洁易用与更优雅的排版。&lt;/p&gt;&#xA;</content>
+    <link href="http://www.chole.io/blog/02.html"></link>
     <author>
       <name>司白</name>
     </author>

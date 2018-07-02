@@ -1,6 +1,6 @@
 site:
-    title: "纸小墨官方博客"
-    subtitle: "构建只为纯粹书写的博客"
+    title: "司白官方博客"
+    subtitle: "爱郭哥，爱生活"
     limit: 10
     theme: theme
     lang: zh
@@ -12,8 +12,8 @@ site:
 
 authors:
     me:
-        name: "纸小墨"
-        intro: "构建只为纯粹书写的博客"
+        name: "司白"
+        intro: "爱郭哥，爱生活"
         avatar: "-/images/avatar.png"
 
 build:

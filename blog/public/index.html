@@ -44,6 +44,28 @@
     var root = '';
 </script>
 
+<script type="text/javascript">
+    var conn, reloadTimer, connectTimer;
+    var connect = function() {
+        conn = new WebSocket('ws://' + location.host + '/live');
+        conn.onmessage = function(event) {
+            if (event.data === 'change') {
+                if (reloadTimer) clearTimeout(reloadTimer);
+                reloadTimer = setTimeout(function() {
+                    window.location.reload();
+                }, 200);
+            }
+        };
+        conn.onclose = function() {
+            if (connectTimer) clearTimeout(connectTimer);
+            connectTimer = setTimeout(function() {
+                connect();
+            }, 1000);
+        };
+    };
+    connect();
+</script>
+
 
         <meta name="keywords" content="爱郭哥，爱生活">
         <meta name="description" content="爱郭哥，爱生活">
@@ -88,6 +110,23 @@
                             <a class="name" href="/about.me.html">司白</a>
                             
                             <span class="date" data-time="1512982800"><span class="from"></span></span>
+                            
+                            <span class="tags">
+                            <a class="tag" href="/tag/life/index.html">life</a><a class="tag" href="/tag/love/index.html">love</a>
+                            </span>
+                        </section>
+                    </li>
+                    
+                    <li class="article">
+                        <a class="title" href="/02.html">7.2--无题</a>
+                        <div class="cover" style="background-image:url(/images/example.png);"></div>
+                        <section class="preview content"><p>纸小墨（InkPaper）是一个GO语言编写的开源静态博客构建工具，可以快速搭建博客网站。它无依赖跨平台，配置简单构建快速，注重简洁易用与更优雅的排版。</p>
+</section>
+                        <section class="info">
+                            <span class="avatar" style="background-image: url(/images/avatar.png);"></span>
+                            <a class="name" href="/about.me.html">司白</a>
+                            
+                            <span class="date" data-time="1530536400"><span class="from"></span></span>
                             
                             <span class="tags">
                             <a class="tag" href="/tag/life/index.html">life</a><a class="tag" href="/tag/love/index.html">love</a>
